@@ -6,7 +6,7 @@ import sys
 
 if len(sys.argv) < 3:
     print(f"Missing Command Line Args")
-    print(f"Usage: python3 theshowscraper.py <rarity> <page number> <optional filter>")
+    print(f"Usage: python3 theshowscraper.py <rarity> <page number>")
     print(f"Rarity: Common = 1, Bronze = 2, etc")
     sys.exit(0)
 
