@@ -16,7 +16,9 @@ marketPage = sys.argv[2]
 marketLink = ""
 
 try:
-    if (cardRarity != '0'): 
+    if (cardRarity == '9'):
+        marketLink = f'https://theshownation.com/mlb20/community_market?display_position=&amp;max_best_buy_price=500&amp;max_best_sell_price=&amp;max_rank=&amp;min_best_buy_price=&amp;min_best_sell_price=600&amp;min_rank=&amp;name=&amp;player_type_id=&amp;rarity_id=2&amp;series_id=&amp;team_id=&amp;type=mlb_card'
+    elif (cardRarity != '0'): 
         marketLink = f'https://theshownation.com/mlb20/community_market?page={marketPage}&display_position=&amp=&max_best_buy_price=&max_best_sell_price=&max_rank=&min_best_buy_price=&min_best_sell_price=&min_rank=&name=&player_type_id=&rarity_id={cardRarity}&series_id=&team_id=&type=mlb_card'
     elif (cardRarity == '0'):
         marketLink = f'https://theshownation.com/mlb20/community_market?page={marketPage}&display_position=&amp;max_best_buy_price=10&amp;max_best_sell_price=&amp;max_rank=&amp;min_best_buy_price=&amp;min_best_sell_price=40&amp;min_rank=&amp;name=&amp;player_type_id=&amp;rarity_id={cardRarity}&amp;series_id=&amp;team_id=&amp;type=mlb_card'
